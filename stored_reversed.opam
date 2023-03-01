@@ -15,6 +15,7 @@ depends: [
   "ppx_jane"
   "dune"     {>= "2.0.0"}
 ]
+available: arch != "arm32" & arch != "x86_32"
 synopsis: "A library for representing a list temporarily stored in reverse order."
 description: "
 A ['a list t] represents a list temporarily stored in the reverse of its logical order.
